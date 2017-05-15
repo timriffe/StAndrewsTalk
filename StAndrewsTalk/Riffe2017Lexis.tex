@@ -27,7 +27,7 @@
 \usepackage[mpidr]{./mpidr/beamerthemeMPIDR}
 
 %% Declaring title and author
-\title{Timespaces:\\Extensions and applications of \\ the Lexis diagram}
+\title{Extensions and applications of \\ the Lexis diagram}
 \subtitle{Tim Riffe}		%%
 
 %%	the institute's logo
@@ -53,9 +53,9 @@
 %-------------------
 
 % TOC
-\begin{frame}{Plan}
-\tableofcontents
-\end{frame}
+%\begin{frame}{Plan}
+%\tableofcontents
+%\end{frame}
 
 % -------------------
 \section{Teaser}
@@ -147,11 +147,6 @@ Sex differences in mortality\\The Human Mortality Explorer, Jonas Schoeley
 
 %-----------------------------------------
 \section{Non-standard applications}
-\begin{frame}
-\frametitle{Cohort structure and composition}
-\includegraphics[scale=.55]{Figures/WPLexisPyramid.png}
-\end{frame}
-
 
 \begin{frame}
 \frametitle{Subpopulation composition and renewal}
@@ -159,10 +154,15 @@ Sex differences in mortality\\The Human Mortality Explorer, Jonas Schoeley
 \end{frame}
 
 \begin{frame}
-\frametitle{Defense $=$ birth}
+\frametitle{Alternative axes: PhD Defense $=$ birth}
 \includegraphics[scale=1.3]{Figures/LexisArticles.png}\\
 Sula (2012)
 \end{frame}
+
+%\begin{frame}
+%\frametitle{Cohort structure and composition}
+%\includegraphics[scale=.55]{Figures/WPLexisPyramid.png}
+%\end{frame}
 
 %%-----------------------------------
 %\subsection{aplicaciones no serias}
@@ -184,77 +184,72 @@ Sula (2012)
 %\end{frame}
 %
 %-----------------------------------
-\section{analogos}
-\begin{frame}
-\frametitle{otras relaciones como el EPC (APC)}
-\hspace{2cm}\includegraphics[scale=1.4]{Figures/TetraHedronEdgesOnly.pdf}\\
-Riffe, Schoeley, \& Villavicencio (2015)
-\end{frame}
+%\section{analogos}
+%\begin{frame}
+%\frametitle{otras relaciones como el EPC (APC)}
+%\hspace{2cm}\includegraphics[scale=1.4]{Figures/TetraHedronEdgesOnly.pdf}\\
+%Riffe, Schoeley, \& Villavicencio (2015)
+%\end{frame}
 
-\begin{frame}
-\frametitle{el diagrama TAL}
-\hspace{2cm}\includegraphics[scale=.9]{Figures/TALrt.pdf}\\
-Riffe, Schoeley, \& Villavicencio (2015) \\ saltamos LCD y TPD \ldots
-\end{frame}
+%\begin{frame}
+%\frametitle{el diagrama TAL}
+%\hspace{2cm}\includegraphics[scale=.9]{Figures/TALrt.pdf}\\
+%Riffe, Schoeley, \& Villavicencio (2015) \\ saltamos LCD y TPD \ldots
+%\end{frame}
 
-\begin{frame}
-\frametitle{aplicaci\'{o}n del diagrama TAL I}
-\hspace{2cm}\includegraphics[scale=.9]{Figures/TAL_male_psych.pdf}\\
-Riffe, Chung, Spijker, \& MacInnes (2016)
-\end{frame}
+%\begin{frame}
+%\frametitle{aplicaci\'{o}n del diagrama TAL I}
+%\hspace{2cm}\includegraphics[scale=.9]{Figures/TAL_male_psych.pdf}\\
+%Riffe, Chung, Spijker, \& MacInnes (2016)
+%\end{frame}
 
-\begin{frame}
-\frametitle{aplicaci\'{o}n del diagrama TAL II}
-\hspace{2cm}\includegraphics[scale=.9]{Figures/TAL_male_back.pdf}\\
-Riffe, Chung, Spijker, \& MacInnes (2016)
-\end{frame}
+%\begin{frame}
+%\frametitle{aplicaci\'{o}n del diagrama TAL II}
+%\hspace{2cm}\includegraphics[scale=.9]{Figures/TAL_male_back.pdf}\\
+%Riffe, Chung, Spijker, \& MacInnes (2016)
+%\end{frame}
 
 %-----------------------------------
-\section{Transformations of Lexis}
+%\section{Transformations of Lexis}
+
+%\begin{frame}
+%\frametitle{Coordinate reprojection I}
+%\includegraphics[scale=1]{Figures/ProspAgeLexis.pdf}\\
+%$age \rightarrow e(age)$, Riffe (2016)
+%\end{frame}
 
 \begin{frame}
-\frametitle{Coordinate reprojection I}
-\includegraphics[scale=1]{Figures/ProspAgeLexis.pdf}\\
-$age \rightarrow e(age)$, Riffe (2016)
-\end{frame}
-
-\begin{frame}
-\frametitle{transformaciones de Lexis II}
+\frametitle{Coordinate reprojection}
 \includegraphics[scale=.9]{Figures/FertAPC.pdf}\\
-Riffe (2016)
+$~$\\
+APC: Sweden fertility, 1891-2014 (HFD)
 \end{frame}
 
 \begin{frame}
-\frametitle{transformaciones de Lexis III}
+\frametitle{Coordinate reprojection}
 \includegraphics[scale=.9]{Figures/FertQuant.pdf}\\
-Riffe (2016)
+$Age~\rightarrow~survival~quantile(Age)~\rightarrow~Fert(\alpha,t)$\\
+Sweden fertility, 1891-2014 (HFD)
 \end{frame}
 
 %-----------------------------------
-\section{resumen}
+\section{Redux}
+% strip Lexis back to two points and a duration.
 \begin{frame}
-\frametitle{resumen}
-\begin{itemize}[<+->]
-  \item dese\~{n}o y explicaci\'{o}n de m\'{e}todos demogr\'{a}ficos
-  \item visualizaci\'{o}n para:
-  \begin{itemize}
-    \item resumir la estructura de datos
-    \item buscar anomolias que indican datos defectuosos
-    \item detectar pautas de variaci\'{o}n en los datos
-  \end{itemize}
-  \item cambiar nacer o morir con entrar y salir
-  \item aplicable con otros aspectos del tiempo demogr\'{a}fico (tiempo restante,
-  duraci\'{o}n total)
-  \item re-proyectar la superficie Lexis seg\'{u}n una transformaci\'{o}n demogr\'{a}fica
-\end{itemize}
+\frametitle{The Lexis diagram}
+\includegraphics[scale=1.5]{Figures/LexisStripped0.pdf}\\
 \end{frame}
 
-% ---------------------------
 \begin{frame}
-\vspace{-15em}
-\begin{center}
-\hspace*{-6cm}\includegraphics[scale=.7]{Figures/prism.jpg}
-\end{center}
+\frametitle{APC}
+\includegraphics[scale=1.5]{Figures/LexisStripped1.pdf}\\
 \end{frame}
+
+\begin{frame}
+\frametitle{PC vectors}
+\includegraphics[scale=1.5]{Figures/LexisStripped2.pdf}\\
+\end{frame}
+
+
 
 \end{document}
