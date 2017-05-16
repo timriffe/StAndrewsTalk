@@ -238,21 +238,25 @@ Sweden fertility, 1891-2014 (HFD)
 % strip Lexis back to two points and a duration.
 \begin{frame}
 \frametitle{The Lexis diagram}
+\centering
 \includegraphics[scale=1.5]{Figures/LexisStripped0.pdf}\\
 \end{frame}
 
 \begin{frame}
 \frametitle{APC}
+\centering
 \includegraphics[scale=1.5]{Figures/LexisStripped1.pdf}\\
 \end{frame}
 
 \begin{frame}
 \frametitle{PC vectors}
+\centering
 \includegraphics[scale=1.5]{Figures/LexisStripped2.pdf}\\
 \end{frame}
 
 \begin{frame}
 \frametitle{PC as points on a timeline}
+\centering
 \includegraphics[scale=1.5]{Figures/PCline0.pdf}\\
 \end{frame}
 
@@ -309,6 +313,64 @@ Sweden fertility, 1891-2014 (HFD)
 \centering
 \includegraphics[scale=1.1]{Figures/edgep5.pdf}\\
 \end{frame}
+
+\begin{frame}
+\frametitle{A selection of properties of temporal identities}
+\begin{enumerate}
+  \item For $n$ events there are $m = \binom{n}{2}$ durations. (1,3,6,10,\ldots)
+  \item The complete temporal graph, $G$, based on $n$ events has $n+1$ vertices
+  and $n+m$ edges.
+  \item There are $\binom{n+1}{3}$ triangle subidentities in $G$.
+  (1,4,10,20,\ldots)
+  \item $\binom{n}{2}$ of the subidentities have 2 events and 1 duration,
+  like Lexis,  (1,3,6,10,\ldots)
+  \item $\binom{n}{3}$ of the subidentities consist in 3 durations. (0,1,4,10)
+  \item There are $(n+1)^{(n-1)}$ ways to fit a model \emph{covering} the $m+n$
+  time measures implied by $n$ \emph{without} inducing a singularity. Everything else has
+  APC-style redundancy.
+\end{enumerate}
+Note: not all durations scale like age, e.g. length of life. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Too much info?}
+\centering
+\huge{Time for an example}
+\end{frame}
+
+\begin{frame}
+\frametitle{A demographic time framework}
+\centering
+\includegraphics[scale=1.5]{Figures/edgep3.pdf}\\
+\end{frame}
+
+\begin{frame}
+\frametitle{A demographic time framework}
+\centering
+\includegraphics[scale=1.5]{Figures/APCTDLsq.pdf}\\
+\end{frame}
+
+\begin{frame}
+\frametitle{A demographic time framework}
+\centering
+\vspace{-3em}
+\includegraphics[scale=1.5]{Figures/TetraHedronEdgesOnly.pdf}\\
+\end{frame}
+
+\begin{frame}
+\frametitle{A demographic time framework}
+\centering
+\vspace{-3em}
+\includegraphics[scale=1.5]{Figures/TetraHedronEdgesOnlyTAL.pdf}\\
+\end{frame}
+
+
+
+
+
+
+
+
 
 
 \end{document}
