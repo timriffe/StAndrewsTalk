@@ -28,7 +28,9 @@
 
 %% Declaring title and author
 \title{Extensions and applications of \\ the Lexis diagram}
-\subtitle{Tim Riffe}		%%
+\subtitle{Tim Riffe \\ \\ \small{16 May, 2017}\\ \\ \small{Population \& Health
+Research Cluster}\\ \small{St.Andrews University}}
+%%
 
 %%	the institute's logo
 \renewcommand{\mylogo}{\includegraphics[width=4.7in]{mpidr_logo_colour_en}}
@@ -140,8 +142,8 @@ HMD Methods protocol (2007)
 \begin{center}
 \includegraphics[scale=.8]{Figures/Schoeley2.png}
 \end{center}
-Sex differences in mortality\\The Human Mortality Explorer, Jonas Schoeley
-(2015)
+Sex differences in Italian mortality\\The Human Mortality Explorer, Jonas
+Schoeley (2015)
 \end{frame}
 
 
@@ -315,20 +317,21 @@ Sweden fertility, 1891-2014 (HFD)
 \end{frame}
 
 \begin{frame}
-\frametitle{A selection of properties of temporal identities}
-\begin{enumerate}
+\frametitle{Selected properties of temporal identities}
+\begin{enumerate}[<+->]
   \item For $n$ events there are $m = \binom{n}{2}$ durations. (1,3,6,10,\ldots)
-  \item The complete temporal graph, $G$, based on $n$ events has $n+1$ vertices
-  and $n+m$ edges.
-  \item There are $\binom{n+1}{3}$ triangle subidentities in $G$.
+  \item The complete temporal graph, $\textbf{K}$, based on $n$ events has $n+1$
+  vertices and $n+m$ edges.
+  \item There are $\binom{n+1}{3}$ triangle subidentities in $\textbf{K}$.
   (1,4,10,20,\ldots)
   \item $\binom{n}{2}$ of the subidentities have 2 events and 1 duration,
   like Lexis,  (1,3,6,10,\ldots)
   \item $\binom{n}{3}$ of the subidentities consist in 3 durations. (0,1,4,10)
   \item There are $(n+1)^{(n-1)}$ ways to fit a model \emph{covering} the $m+n$
-  time measures implied by $n$ \emph{without} inducing a singularity. Everything else has
-  APC-style redundancy.
+  time measures implied by $n$ \emph{without} without identification
+  problems. Everything else has APC-style redundancy.
 \end{enumerate}
+\small
 Note: not all durations scale like age, e.g. length of life. 
 \end{frame}
 
@@ -358,7 +361,7 @@ Note: not all durations scale like age, e.g. length of life.
 \end{frame}
 
 \begin{frame}
-\frametitle{A demographic time framework}
+\frametitle{A demographic time framework: Health}
 \centering
 \vspace{-3em}
 \includegraphics[scale=1.5]{Figures/TetraHedronEdgesOnlyTAL.pdf}\\
@@ -418,8 +421,46 @@ females, 1915-1919 cohort, USA (HRS)
 males, 1915-1919 cohort, USA (HRS)
 \end{frame}
 
+\begin{frame}
+\frametitle{Why is this a big deal?}
+\begin{itemize}[<+->]
+  \item because otherwise we just have age-patterns
+  \item consequences for healthy life expectancy
+  \item consequences for health comparisons
+  \item but that's another talk
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Messages to keep}
+\begin{itemize}[<+->]
+  \item time planes useful for measurement, understanding, and diagnostics
+  \item event-duration relationships (graphs) are easy to put together
+  \item event-duration relationships yield many new time planes
+  \item properties still being explored
+  \item this is a framework, not a method. 
+  \item you can call it ``generalized Lexis'', ``multistate Lexis'',
+  ``time-spaces'', whatever.
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Acknowledgements}
+All errors are my own, and these people are in large part responsible for the
+rest:
+\\
+Jonas Schoeley, Francisco Villavicencio, Pil H. Chung, John MacInnes, Jeroen
+Spijker, Alyson van Raalte, Maarten Bijlsma
+\end{frame}
+
+\begin{frame}
+\frametitle{dimensions and states}
+\vspace{-10em}
+\begin{center}
+\hspace*{-6cm}\includegraphics[scale=.7]{Figures/prism.jpg}
+\end{center}
+\end{frame}
+%-----------
 
 
 \end{document}
